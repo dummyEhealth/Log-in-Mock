@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>NewProject</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <!--Header section-->
+  <header class="container-fluid navbar">
+    <a routerLink="/"><img src="assets/elogo.png"></a>
+  </header>
+
+  <!--Login form-->
+  <div class="container h-100">
+    <div class="col-lg-12 col-sm-12 col-xs-12 loginForm h-100">
+      <div class="row justify-content-md-center h-100">
+        <div class="card-wrapper">
+          <div class="card fat">
+            <div class="card-body">
+              <label class="toggle-btn">
+                Log in to eHealth
+              </label>
+              <form class="form-input" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" #loginForm
+                id="login">
+                <div>
+                  <input type="email" placeholder="Your email" class="input-field" required>
+                </div>
+                <div>
+                  <input type="password" placeholder="Your password" class="input-field" required>
+                </div>
+                <p class="forgotpass">forgot password?</p>
+                <div>
+                  <input type="checkbox" class="check-box" checked><span>Remember Password</span>
+                </div>
+                <button type="submit" class="submit-btn" [disabled]="loginForm.invalid">Log In</button>
+                <div class="button-social">
+                  <p class="social-label">or sign in with</p>
+                  <hr class="social-line">
+                  <button type="button" class="social-login">
+                    <ion-icon name="logo-google"></ion-icon>Google
+                  </button>
+                  <button type="button" class="social-login">
+                    <ion-icon name="logo-facebook"></ion-icon>Facebook
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12 col-sm-12 col-xs-12 rightpanel">
+    <div class="no-account">
+      New to eHealth? <a href="#">Create an Account</a>
+    </div>
+    <div class="sponsors">
+      <ul>
+        <li>
+          <a routerLink="#"><img src="assets/norton.png"></a>
+        </li>
+        <li>
+          <a routerLink="#"><img src="assets/truste.jpg"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  <!--footer section-->
+  <footer>
+    <hr class="social-line">
+    <div class="col-xs-12 row">
+      <div class="col span-1-of-2">
+        <ul class="footer-nav">
+          <li><a href="#">Licensing and Legal</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Information in other Languages</a></li>
+        </ul>
+      </div>
+      <div class="col span-1-of-2">
+        <ul class="social-icons">
+          <li><a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-google"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <p style="color: white; justify-content: center;">
+          Copyright &copy; 2020 by eHealth. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
